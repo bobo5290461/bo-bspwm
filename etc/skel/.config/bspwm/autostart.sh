@@ -19,20 +19,20 @@ $HOME/.config/polybar/launch.sh &
 #setxkbmap -layout be
 
 #Some ways to set your wallpaper besides variety or nitrogen
-#feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/hefftorlinux/sundown_landscape.png &
+feh --bg-fill ~/.config/bspwm/bobo-standard.jpg &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
-wal -nRa 90 &
+#wal -nRa 90 &
+$HOME/.config/bspwm/scripts/cleanfullscreen &
 
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-dex $HOME/.config/autostart/hefftor-welcome-app.desktop
+#dex $HOME/.config/autostart/hefftor-welcome-app.desktop
 
-run conky -c ~/.conkyrc &
-run conky -c ~/.conkyrc_helper &
-run glava &
-run mpd &
+#run conky -c ~/.conkyrc &
+#run conky -c ~/.conkyrc_helper &
+#run glava &
+#run mpd &
 # run variety &
 run nm-applet &
 run pamac-tray &
@@ -40,7 +40,7 @@ run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
 run dunst &
-run urxvt -name 'Scratchpad' -e ~/.local/bin/scratch &
+#run urxvt -name 'Scratchpad' -e ~/.local/bin/scratch &
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # /usr/lib/xfce4/notifyd/xfce4-notifyd &
